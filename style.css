@@ -1,0 +1,106 @@
+:root{
+    --btn-width: 3px;
+    --display-width: 4px;
+    --card-width: 1px;
+}
+:root.Dark{
+    --background-color: black;
+    --theme-color: rgb(201, 201, 201);
+    --btn-background-color-hover: rgb(224, 224, 224);
+    --btn-color-hover: black;
+}
+:root.Light{
+    --background-color: rgb(224, 224, 224);
+    --theme-color: black;
+    --btn-background-color-hover: black;
+    --btn-color-hover: rgb(224, 224, 224);
+}
+
+*{
+    background-color: var(--background-color);
+    color: var(--theme-color); 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display{
+    width: 800px;
+    height: 500px;
+    border-style: solid;
+    border-width: var(--display-width);
+    border-color: var( --theme-color);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.dealerCardDisplay{
+    display: flex;
+    flex-direction: column;
+  
+}
+.playerCardDisplay{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainer{
+    display:grid;
+    gap: 20px;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 70px 70px;
+    
+}
+
+.pCards, .dCards{
+    border: solid;
+    border-radius: 10px;
+    width: 60px;
+    height: 75px;
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    border-width: var(--btn-width);
+    border-color: var(--theme-color);
+    border-style: solid;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.theme-toggle{
+    width: 70px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.start{
+    margin-top: 20px;
+    border-width: var(--btn-width);
+    border-color: var(--theme-color);
+    border-style: solid;
+    width: 150px;
+    height: 75px;
+    border-radius: 15px;
+    position: absolute;
+    top: 40%;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--btn-background-color-hover);
+    color: var(--btn-color-hover);
+} 
+
+p{
+    font-size: 20px;
+    display: flex;
+}
+.winner{
+    
+}
